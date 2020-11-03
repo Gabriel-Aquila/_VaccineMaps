@@ -4418,3 +4418,28 @@
 
 })));
 //# sourceMappingURL=bootstrap.js.map
+
+$(document).ready(function(){
+
+ 
+
+//Verifica se a Janela está no topo
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('#subir').fadeIn();
+        } else {
+            $('#subir').fadeOut();
+        }
+    });
+
+ 
+
+    //Onde a mágia acontece! rs
+    $('#subir').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+
+ 
+
+});

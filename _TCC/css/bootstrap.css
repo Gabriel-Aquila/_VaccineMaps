@@ -4752,7 +4752,6 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
 
@@ -5283,7 +5282,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 @media (min-width: 576px) {
   .jumbotron1 {
     padding: 10rem 2rem;
-    background: linear-gradient(0deg, rgba(67,164,232,1) 0%, rgba(87,230,255,1) 100%);
+    background-image: url(https://i.ibb.co/dfFYXxt/Capturar.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -5296,7 +5295,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 @media (min-width: 576px) {
   .jumbotron2 {
     padding: 7rem 2rem;
-    background: linear-gradient(0deg, rgba(67,164,232,1) 0%, rgba(87,230,255,1) 100%);
+    background: linear-gradient(0deg, rgba(144,228,245,96) 0%, rgba(219,242,247,97) 120%);
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: cover;
