@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -278,16 +282,16 @@
     <div class="cadlogingcontent">      
       <!--FORMULÁRIO DE LOGIN-->
       <div id="loginhome">
-        <form method="post" action=""> 
+        <form method="post" action="login.php"> 
           <h1>Login</h1> 
           <p> 
             <label for="nome_login">Seu E-mail</label>
-            <input id="nome_login" name="nome_login" required="required" type="email" placeholder="Ex. contato@gmail.com"/>
+            <input id="nome_login" name="usuario" required="required" type="email" placeholder="Ex. contato@gmail.com"/>
           </p>
            
           <p> 
             <label for="email_login">Sua Senha</label>
-            <input id="email_login" name="email_login" required="required" type="password" placeholder="Ex. 1234" /> 
+            <input id="email_login" name="senha" required="required" type="password" placeholder="Ex. 1234" /> 
           </p>
            
           <p> 
