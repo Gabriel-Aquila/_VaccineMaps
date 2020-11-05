@@ -312,22 +312,21 @@ session_start();
  
       <!--FORMULÁRIO DE CADASTRO-->
       <div id="cadastrohome">
-        <form method="post" action=""> 
+        <form method="post" action="cadastrar.php"> 
           <h1>Cadastro</h1> 
-           
-          <p> 
+       
             <label for="nome_cad">Seu Nome</label>
-            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Ex. José da Silva" />
+            <input id="nome_cad" name="nome" required="required" type="text" placeholder="Ex. José da Silva" />
           </p>
            
           <p> 
             <label for="email_cad">Seu E-mail</label>
-            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="Ex. contato@gmail.com"/> 
+            <input id="email_cad" name="usuario" required="required" type="email" placeholder="Ex. contato@gmail.com"/> 
           </p>
            
           <p> 
             <label for="senha_cad">Sua Senha</label>
-            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="Ex. 1234"/>
+            <input id="senha_cad" name="senha" required="required" type="password" placeholder="Ex. 1234"/>
           </p>
            
           <p> 
