@@ -1,7 +1,3 @@
-<?php
-session_start();
-?>
-
 <!DOCTYPE html>
 <html>
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -10,11 +6,13 @@ session_start();
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<link rel="stylesheet" type="text/css" href="estilo/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="padding: 1rem 2rem; background-color: #90E4F5;">
-  <a class="navbar-brand" href="#"><img src="image/Vaccinmaps.png"></a>
+  <a class="navbar-brand" href="#"><img src="image/logo.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button> 
@@ -49,9 +47,9 @@ session_start();
         <div class="row">
       <div class="col-12 text-center">
     <h1 class="display-4">INFORME SEU CEP</h1>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    <p class="lead">Pesquise seu CEP para encontrar os postos mais próximos e localize a vacina que deseja.</p>
       <form class="form-inline" style="justify-content: center;">
-        <input class="form-control ml-4 mr-2" type="search" id="inputCEP" placeholder="Ex: 02880-010">
+        <input class="form-control ml-4 mr-2" type="Search" id="inputCEP" placeholder="Ex: 02880-010" style="width: 30%; height: 40px; text-align: center;">
       </form>
       <br>
       <a href="pagcep.html">
@@ -67,23 +65,22 @@ session_start();
 <div class="container">
 <section id="comofunciona" style="padding-top: 100px;" >
 <h1 style="text-align: left; " >Como Funciona?</h1>
-</div>
-    <div class="icones-display container">
-            <div class="blog">
+    <div class="row" style="text-align: center;">
+            <div class="col">
                 <img src="image/pesquisecep.png" style="filter:drop-shadow(8px 8px 10px gray);"/>
                 <br>
                 <br>
                 <h3>Passo 1</h3>
                 <center>Informe seu CEP no campo de busca.</center>
                 </div>
-            <div class="blog">
+            <div class="col">
                 <img src="image/mapa.png" style="filter:drop-shadow(8px 8px 10px gray);"/>
                 <br>
                 <br>
                 <h3>Passo 2</h3>
                 <center>Navegue pelo mapa e localize o posto desejado.</center>
             </div>
-            <div class="blog">
+            <div class="col">
                 <img src="image/conversacao.png"  style="filter:drop-shadow(8px 8px 10px gray);"/>
                 <br>
                 <br>
@@ -92,52 +89,99 @@ session_start();
             </div>
         </div>
 </section>
+        </div>
 
 
+
+<!-- aparecer no desktop -->  
 <div class="container">
+    
 <section id="noticias" style="padding-top: 100px;">
+<div class="d-none d-md-none d-lg-block d-xl-block">
 <h1 style="text-align: left;" >Notícias</h1>
+
  <div class="row">
         <div class="col grow">
              <div class="card bg-dark text-white" style="border: none;">
-              <a href="exemplonoticia.html"><img src="image/n1.jpg"class="card-img " style="height: 425px; opacity: 90%; filter:contrast(90%);" alt="...">
-              <div class="card-img-overlay" style="color: white;">
-                <h5 class="card-title">Título da Matéria</h5>
-                <p class="card-text" style="font-family: Roboto;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <a href="noticia9.html"><img src="image/nvirusdesktop.png"class="card-img " style="height: 425px; opacity: 90%; filter:contrast(90%);" alt="...">
+              <div class="card-img-overlay" style="color: white; margin-top: 55%;">
+                <h5 class="card-title text-center">COVID-19: Todos com os mais vulneráveis</h5>
               </div></a>
             </div>
            
       </div>
-
            <div class="col">
             <div class="grow">
             <div class="card bg-dark text-white" style="border: none;">
-             <a href="exemplonoticia.html"><img src="image/n2.jpg"class="card-img" style="height: 200px; opacity: 90%; filter:contrast(90%);" alt="...">              
-              <div class="card-img-overlay" style="color: white;">
-                <h5 class="card-title">Título da Matéria</h5>
-                <p class="card-text" style="font-family: Roboto;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+             <a href="noticia7.html"><img src="image/n1new.jpg"class="card-img" style="height: 200px; opacity: 90%; filter:contrast(90%);" alt="...">              
+              <div class="card-img-overlay" style="color: white; margin-top: 15%;">
+                <h5 class="card-title text-center ">Comportamento do coronavírus no calor é chave para previsões sobre seu controle</h5>
               </div></a>
             </div>
             </div>
             <br>
             <div class="grow">
              <div class="card bg-dark text-white" style="border: none;">
-              <a href="exemplonoticia.html"><img src="image/n3.jpg" class="card-img"  style="height: 200px; opacity: 90%; filter:contrast(90%);" alt="...">
-              <div class="card-img-overlay" style="color: white;">
-                <h5 class="card-title">Título da Matéria</h5>
-                <p class="card-text" style="font-family: Roboto;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <a href="noticia8.html"><img src="image/sarampo.png" class="card-img"  style="height: 200px; opacity: 90%; filter:contrast(90%);" alt="...">
+              <div class="card-img-overlay" style="color: white; margin-top: 15%;">
+                <h5 class="card-title text-center">Doenças infectocontagiosas como a poliomielite e o sarampo voltam a assustar</h5>
               </div></a>
             </div>
             </div>
             </div>
+ </div>
+<br>
+<a href="pagnoticia.html"><button class="btn btn-dark" style="padding: 0.7rem 1.5rem; font-size: 1.1rem; width: 50%; margin-left: 25%;" type="submit">Ver mais notícias</button></a>
 
+ 
+
+</div>
+
+ 
+
+
+     <!-- aparecer no mobile -->
+    <div class="d-sm-block d-lg-none">
+      <h1 style="text-align: left;" >Notícias</h1>
+       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="noticia9.html"><img src="image/nvirus.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption">
+        <h5>COVID-19: Todos com os mais vulneráveis</h5>
+      </div>
+    </div>
+  </a>
+    <div class="carousel-item">
+      <a href="noticia7.html"><img src="image/n1new.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption">
+        <h5>Comportamento do coronavírus no calor é chave para previsões sobre seu controle</h5>
+      </div>
+    </div>
+  </a>
+    <div class="carousel-item">
+      <a href="noticia8.html"><img src="image/sarampo.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption">
+        <h5>Doenças infectocontagiosas como a poliomielite e o sarampo voltam a assustar</h5>
+      </div>
+    </div>
+  </a>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 <br>
-<a href="pagnoticia.html" style="margin-left: 85%; color: black; font-weight: bold;">Ver mais notícias ►</a>
-
-</section>
+<a href="pagnoticia.html"><button class="btn btn-dark" style="padding: 0.7rem 1.5rem; font-size: 1.1rem; width: 50%; margin-left: 25%;" type="submit">Ver mais notícias</button></a>
 </div>
 
+</section>
+  </div>
 <section id="ajuda" style="padding-top: 100px;">
 <div class="jumbotron2 jumbotron-fluid">
 
@@ -155,7 +199,7 @@ session_start();
   
              <div class="form-group">
  
-        <input type="text" class="form-control" style="height: 42px;width:160%; padding-left:  15px" id="formGroupExampleInput" placeholder="Telefone">
+        <input type="Tel" class="form-control" style="height: 42px;width:160%; padding-left:  15px" id="formGroupExampleInput" placeholder="Telefone">
             </div>
 
         </div>
@@ -163,9 +207,7 @@ session_start();
           <div class="form-group">
     <textarea class="form-control" style="font-size: 0.9999rem; padding-left:  15px;" id="exampleFormControlTextarea1" rows="3.5" placeholder="Mensagem"></textarea>
          </div>
-
   <button type="submit" class="btn btn-primary" style="padding: 0.3rem 2rem; font-size: 0.9999rem; background-color: black">Enviar</button>
-
   </div>
 
 
@@ -176,28 +218,28 @@ session_start();
 <div class="container">
 
 <h1 style="text-align: left;" >Social</h1>
+<div class="row social-display">
+  <div class="col">
+    <div class="social1">
+      <blockquote class="twitter-tweet"><p lang="pt" dir="ltr">💧 Vacinação é proteção!<br><br>➡ Campanha de <a href="https://twitter.com/hashtag/vacina%C3%A7%C3%A3o?src=hash&amp;ref_src=twsrc%5Etfw">#vacinação</a> contra <a href="https://twitter.com/hashtag/poliomielite?src=hash&amp;ref_src=twsrc%5Etfw">#poliomielite</a> e <a href="https://twitter.com/hashtag/multivacina%C3%A7%C3%A3o?src=hash&amp;ref_src=twsrc%5Etfw">#multivacinação</a> protege contra cerca de 20 doenças.<br><br>➡ Dirija-se ao posto de saúde mais próximo até 13 de novembro.<br><br>Saiba+ <a href="https://t.co/LSW4idRpH8">https://t.co/LSW4idRpH8</a> <a href="https://t.co/CPxanuul2K">pic.twitter.com/CPxanuul2K</a></p>&mdash; Secretaria da Saúde SP (@spsaude_) <a href="https://twitter.com/spsaude_/status/1323685120318922753?ref_src=twsrc%5Etfw">November 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </div>
+  <div class="col">
+    <div class="social2">
+    <blockquote class="twitter-tweet"><p lang="pt" dir="ltr"><a href="https://twitter.com/hashtag/VacinaBrasil?src=hash&amp;ref_src=twsrc%5Etfw">#VacinaBrasil</a> Hoje também é o último dia da campanha de vacinação contra o <a href="https://twitter.com/hashtag/sarampo?src=hash&amp;ref_src=twsrc%5Etfw">#sarampo</a>. Se você tem entre 20 e 49 anos de idade, contamos com seu apoio. A vacina está disponível nos 43 mil postos de saúde em todo o país.<br><br>Saiba mais em <a href="https://t.co/rRh8TjSWb8">https://t.co/rRh8TjSWb8</a> <a href="https://t.co/sg4MbhZ9rN">pic.twitter.com/sg4MbhZ9rN</a></p>&mdash; Ministério da Saúde (@minsaude) <a href="https://twitter.com/minsaude/status/1322146460146704384?ref_src=twsrc%5Etfw">October 30, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  </div>
 </div>
-<div class="social-display container">
-   <div class="social1">
-<blockquote class="twitter-tweet"><p lang="pt" dir="ltr">❤😷 Mostre que você se importa com os outros e com você mesmo, use máscara sempre que sair de casa! Faça a sua parte!<br><br>Saiba + em <a href="https://t.co/9IMmkGIELX">https://t.co/9IMmkGIELX</a><a href="https://twitter.com/hashtag/UseMascara?src=hash&amp;ref_src=twsrc%5Etfw">#UseMascara</a><a href="https://twitter.com/hashtag/TodosContraoCoronavirus?src=hash&amp;ref_src=twsrc%5Etfw">#TodosContraoCoronavirus</a> <a href="https://t.co/9yQWUZ9rP0">pic.twitter.com/9yQWUZ9rP0</a></p>&mdash; Secretaria da Saúde SP (@spsaude_) <a href="https://twitter.com/spsaude_/status/1290771344582496257?ref_src=twsrc%5Etfw">August 4, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-
-  <div class="social2">
-<blockquote class="twitter-tweet"><p lang="und" dir="ltr"><a href="https://twitter.com/hashtag/vacinese?src=hash&amp;ref_src=twsrc%5Etfw">#vacinese</a> <a href="https://t.co/BOGk4e6s0F">https://t.co/BOGk4e6s0F</a></p>&mdash; Secretaria da Saúde SP (@spsaude_) <a href="https://twitter.com/spsaude_/status/1292154031247372288?ref_src=twsrc%5Etfw">August 8, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-
-<blockquote class="twitter-tweet"><p lang="pt" dir="ltr"><a href="https://twitter.com/hashtag/VacinaBrasil?src=hash&amp;ref_src=twsrc%5Etfw">#VacinaBrasil</a> Hoje também é o último dia da campanha de vacinação contra o <a href="https://twitter.com/hashtag/sarampo?src=hash&amp;ref_src=twsrc%5Etfw">#sarampo</a>. Se você tem entre 20 e 49 anos de idade, contamos com seu apoio. A vacina está disponível nos 43 mil postos de saúde em todo o país.<br><br>Saiba mais em <a href="https://t.co/rRh8TjSWb8">https://t.co/rRh8TjSWb8</a> <a href="https://t.co/sg4MbhZ9rN">pic.twitter.com/sg4MbhZ9rN</a></p>&mdash; Ministério da Saúde (@minsaude) <a href="https://twitter.com/minsaude/status/1322146460146704384?ref_src=twsrc%5Etfw">October 30, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-
-<div class="social-display container">
-  <div class="social1">
-  <blockquote class="twitter-tweet"><p lang="pt" dir="ltr">❗️Fique atento ❗️<br>Campanha de <a href="https://twitter.com/hashtag/vacina%C3%A7%C3%A3o?src=hash&amp;ref_src=twsrc%5Etfw">#vacinação</a> contra <a href="https://twitter.com/hashtag/poliomielite?src=hash&amp;ref_src=twsrc%5Etfw">#poliomielite</a> e multivacinação é prorrogada até 13 de novembro.<br><br>A medida visa aumentar as coberturas vacinais contra cerca de 20 doenças. Vá até um posto de saúde. <br><br> Saiba mais: <a href="https://t.co/LSW4idzOPA">https://t.co/LSW4idzOPA</a> <a href="https://t.co/zl5ugjl7Rm">pic.twitter.com/zl5ugjl7Rm</a></p>&mdash; Secretaria da Saúde SP (@spsaude_) <a href="https://twitter.com/spsaude_/status/1321923625071554561?ref_src=twsrc%5Etfw">October 29, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-<div class="social2">
-  <blockquote class="twitter-tweet"><p lang="pt" dir="ltr">💉 Governo de SP cria mais seis centros de <a href="https://twitter.com/hashtag/pesquisa?src=hash&amp;ref_src=twsrc%5Etfw">#pesquisa</a> da <a href="https://twitter.com/hashtag/CoronaVac?src=hash&amp;ref_src=twsrc%5Etfw">#CoronaVac</a>.<br><br>🎯 Meta do <a href="https://twitter.com/butantanoficial?ref_src=twsrc%5Etfw">@butantanoficial</a> é acelerar fase final de testes clínicos que vão apontar eficácia da <a href="https://twitter.com/hashtag/vacina?src=hash&amp;ref_src=twsrc%5Etfw">#vacina</a> para registro na Anvisa.<br><br>➡️ Saiba + <a href="https://t.co/4DcaRKzUbw">https://t.co/4DcaRKzUbw</a> <a href="https://twitter.com/hashtag/saude?src=hash&amp;ref_src=twsrc%5Etfw">#saude</a><a href="https://twitter.com/hashtag/governosp?src=hash&amp;ref_src=twsrc%5Etfw">#governosp</a> <a href="https://t.co/EN9WO270HD">pic.twitter.com/EN9WO270HD</a></p>&mdash; Governo de S. Paulo (@governosp) <a href="https://twitter.com/governosp/status/1319717970277523457?ref_src=twsrc%5Etfw">October 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-<div class="social3">
-  <blockquote class="twitter-tweet"><p lang="pt" dir="ltr"><a href="https://twitter.com/hashtag/VacinaBrasil?src=hash&amp;ref_src=twsrc%5Etfw">#VacinaBrasil</a> ÚLTIMO DIA! Contamos com você para fazer a diferença e prevenir nossas crianças contra doenças como a poliomielite. Leve seus filhos para se imunizarem, e avise os amigos e familiares!<br><br>Saiba mais em <a href="https://t.co/rRh8TjSWb8">https://t.co/rRh8TjSWb8</a> <a href="https://t.co/enZVnIBmLS">pic.twitter.com/enZVnIBmLS</a></p>&mdash; Ministério da Saúde (@minsaude) <a href="https://twitter.com/minsaude/status/1322131153013280768?ref_src=twsrc%5Etfw">October 30, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="row social-display">
+  <div class="col">
+  <div class="social3">
+  <blockquote class="twitter-tweet"><p lang="pt" dir="ltr">A vacina do <a href="https://twitter.com/hashtag/Butantan?src=hash&amp;ref_src=twsrc%5Etfw">#Butantan</a> é segura? Ela foi mesmo produzida em menos de um ano? Nossos especialistas esclarecem essas dúvidas, em mais um episódio do <a href="https://twitter.com/hashtag/ButantannaPandemia?src=hash&amp;ref_src=twsrc%5Etfw">#ButantannaPandemia</a>.</p>&mdash; Instituto Butantan (@butantanoficial) <a href="https://twitter.com/butantanoficial/status/1324425589319700481?ref_src=twsrc%5Etfw">November 5, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  </div>
+  <div class="col">
+  <div class="social4">
+ <blockquote class="twitter-tweet"><p lang="pt" dir="ltr">💉 “Nossa região 🌎 está trabalhando arduamente na preparação de uma vacina, mas também devemos manter um curso forte e constante para continuar lutando contra o vírus sem ela” - <a href="https://twitter.com/DirOPSPAHO?ref_src=twsrc%5Etfw">@DirOPSPAHO</a> <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a></p>&mdash; OPAS/OMS Brasil (@OPASOMSBrasil) <a href="https://twitter.com/OPASOMSBrasil/status/1318943965316587521?ref_src=twsrc%5Etfw">October 21, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
   </div>
 </div>
 </section>
@@ -219,7 +261,7 @@ session_start();
         <div class="row">
           <div class="col-sm-12 col-md-6">
             <h6>Sobre a VaccineMaps</h6>
-            <p class="text-justify" style="width: 80%;">Nós da VaccineMaps, criamos este site colaborativo para ajudar os usuários a encontrar as vacinas desejadas. O projeto surgiu com a inteção de contribuir para o aumento da taxa de cobertura vacinal.</p>
+            <p class="text-footer">Nós da VaccineMaps, criamos este site colaborativo para ajudar os usuários a encontrar os postos de vacinação desejados. O projeto surgiu com a intenção de contribuir para o aumento da taxa de cobertura vacinal.</p>
           </div>
 
           <div class="col-xs-6 col-md-3">
@@ -233,7 +275,7 @@ session_start();
           </div>
 
           <div class="col-xs-6 col-md-3">
-            <a href="#"><img src="image/Vaccinmaps.png"></a>
+            <a href="#"><img src="image/logo2footer.png"></a>
           </div>
 
 
@@ -247,10 +289,10 @@ session_start();
             </p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="social-icons">
-                <a href="#" style="padding-right: 25px;"><img src="image/face.png"></a>
-                <a href="#" style="padding-right: 25px;"><img src="image/instagram.png"></a>
-                <a href="#" style="padding-right: 25px;"><img src="image/twitter.png"></a>
+          <div class="social-icons">
+                <a href="https://www.facebook.com/VaccineMaps-102086405054253" style="padding-right: 25px;"><img class="grow-redes" src="image/face.png"></a>
+                <a href="https://www.instagram.com/vaccinemaps/?hl=pt-br" style="padding-right: 25px;"><img class="grow-redes"  src="image/instagram.png"></a>
+                <a href="https://twitter.com/MapsVaccine?s=09" style="padding-right: 25px;"><img class="grow-redes"src="image/twitter.png"></a>
             </div>
           </div>
         </div>
@@ -282,7 +324,7 @@ session_start();
     <div class="cadlogingcontent">      
       <!--FORMULÁRIO DE LOGIN-->
       <div id="loginhome">
-        <form method="post" action="login.php"> 
+        <form method="post" action="../_TCC/server/login.php"> 
           <h1>Login</h1> 
           <p> 
             <label for="nome_login">Seu E-mail</label>
@@ -312,9 +354,10 @@ session_start();
  
       <!--FORMULÁRIO DE CADASTRO-->
       <div id="cadastrohome">
-        <form method="post" action="cadastrar.php"> 
+        <form method="post" action="./_TCC/server/cadastrar.php"> 
           <h1>Cadastro</h1> 
-       
+           
+          <p> 
             <label for="nome_cad">Seu Nome</label>
             <input id="nome_cad" name="nome" required="required" type="text" placeholder="Ex. José da Silva" />
           </p>

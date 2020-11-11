@@ -1,7 +1,12 @@
 <?php
-    session_start();
-    session_destroy();
+session_start();
+
+
+if(!$_SESSION['usuario']){
     header('Location: index.php');
     exit();
+}
+
+
 
 ?>
