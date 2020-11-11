@@ -2191,7 +2191,7 @@ textarea.form-control {
 
 .form-group {
   margin-bottom: 1rem;
-
+  font-family: 'Poppins', sans-serif;
 }
 
 .form-text {
@@ -4885,6 +4885,25 @@ input[type="button"].btn-block {
     margin-left: -15px;
   }
   .card-deck .card {
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-deck {
+    display: -ms-flexbox;
+    display:inline-block;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: 70px;
+    margin-left: 70px;
+  }
+  .card-deck .card {
+    padding-top: 50px;
     -ms-flex: 1 0 0%;
     flex: 1 0 0%;
     margin-right: 15px;
