@@ -1,35 +1,41 @@
+/*Declarando as fontes*/
+@font-face{
+    font-family:titulos;
+    src: url(../fontes/Lovelo-Black.ttf)
+}
+@font-face{
+    font-family: texto;
+    src: url(../fontes/Poppins-Light.ttf)
+}
+
 *, *:before, *:after { 
   margin:0;
   padding:0;
 }
- 
- .link-news{
-    margin-left: 85%;
- }
 
- .text-footer{
-  text-align: justify;
-  width: 80%;
- }
 /* removendo a linha dos links e colocando fontes */
 a{
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: texto;
+}
+
+h2,h3,h4,h5{
+  text-decoration: none;
+  font-family: titulos;
 }
 
 h2,h3,h4,h5 a{
   text-decoration: none;
-  font-family: 'Barlow', sans-serif;
+  font-family: titulos;
 }
 
 h1{
-  font-size: 48px;
+  font-size: 40px;
   padding: 2px 0 10px 0;
-  font-family: 'Barlow', sans-serif;
+  font-family: titulos;
   font-weight: bold;
   text-align: center;
   padding-bottom: 30px;
-  font-family: 'Barlow', sans-serif;
 }
 
 h1:after{
@@ -38,16 +44,34 @@ h1:after{
   width: 100%;
   height: 2px;
   margin-top: 10px;
- 
 }
 
 p{
   margin-bottom:15px;
-  font-family: 'Poppins', sans-serif;
+   font-family: texto;
 }
 
 form{
-  font-family: 'Poppins', sans-serif;
+  font-family: texto;
+}
+
+/*Definindo container das norícias*/
+.container2{
+    width: 100%;
+  padding-right: 20%;
+  padding-left: 20%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.imgnoticias{
+  width: 100%;
+}
+
+.posicaoimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
  
 /* escondendo as ancoras da tela */
@@ -67,7 +91,6 @@ a.linkscadlogin{
   position: relative;   
 }
 
- 
 .cadlogingcontent p:first-child{
   margin: 0px;
 }
@@ -75,7 +98,7 @@ a.linkscadlogin{
 label{
   color: #405c60;
   position: relative;
-  font-family: 'Poppins', sans-serif;
+  font-family: texto;
 }
 
 /* placeholder */
@@ -83,7 +106,7 @@ label{
   color: #bebcbc; 
   font-style: italic;
 }
- 
+
 input:-moz-placeholder,
 textarea:-moz-placeholder{
   color: #bebcbc;
@@ -100,13 +123,10 @@ input:not([type="checkbox"]){
   margin-top: 4px;
   padding: 10px;    
   border: 1px solid #b2b2b2;
- 
   -webkit-border-radius: 3px;
   border-radius: 3px;
- 
   -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
   box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
- 
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
@@ -124,7 +144,6 @@ input[type="submit"]{
   border: none;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-
   transition: all 0.2s linear;
 }
  
@@ -132,7 +151,6 @@ input[type="submit"]{
 input[type="submit"]:hover{
   background: #1d2124;
 }
-
 
 .linklogincad{
   position: absolute;
@@ -145,7 +163,6 @@ input[type="submit"]:hover{
   font-size: 16px;
   text-align: center;
   border-top: 1px solid #dbe5e8;
-
   -webkit-border-radius: 0 0  5px 5px;
   border-radius: 0 0  5px 5px;
 }
@@ -157,10 +174,8 @@ input[type="submit"]:hover{
   color: #687375;
   margin-left: 10px;
   border: 1px solid white;
-
   -webkit-border-radius: 4px;
   border-radius: 4px;
-
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s  linear;
 }
@@ -179,18 +194,14 @@ input[type="submit"]:hover{
   padding: 18px 6% 60px 6%;
   margin: 0 0 35px 0;
   background-color: #DBF2F7;
-  
   -webkit-box-shadow: 5px;
   border-radius: 5px;
-  
   -webkit-animation-duration: 0.5s;
   -webkit-animation-timing-function: ease;
   -webkit-animation-fill-mode: both;
-
   animation-duration: 0.5s;
   animation-timing-function: ease;
   animation-fill-mode: both;
-
 }
 
 /* Efeito ao clicar no botão ( Ir para Login ) */
@@ -199,7 +210,6 @@ input[type="submit"]:hover{
   z-index: 2;
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
- 
   -webkit-animation-delay: .1s;
   animation-delay: .1s;
 }
@@ -257,74 +267,66 @@ input[type="submit"]:hover{
   }
 }
 
-
 /*Como funciona*/
 .icones-display{
-    display: flex;
-    justify-content: space-between;
-    width: 1200px;
-    margin: auto;
-}
-
-.passos{
-    width: 250px;
-    margin-top: 30px;
-    text-align: center;
-}
-
-.passos p{
-    text-align: justify;
-    font-size: 15px;
-}
-
-.ajuda-display{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-right: 12%;
-    margin: auto;
-}
-
-/*mapa*/
-iframe{
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
   margin: auto;
 }
 
+.passos{
+  width: 250px;
+  margin-top: 30px;
+  text-align: center;
+}
 
+.passos p{
+  text-align: justify;
+  font-size: 15px;
+}
+
+/*Ajuda*/
+.ajuda-display{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 12%;
+  margin: auto;
+}
 
 /*social*/
-
 .social1{
-    margin-right: 20px;
-    border-right: 7px solid #456D75;
-    border-left: 7px solid #456D75;
-    border-top: 7px solid #456D75;
-    border-bottom: 7px solid #456D75;
-    background-color: #DBF2F7;
-    padding: 10px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -border-radius: 0px;
-    box-shadow: inset 0 0 50px #ecebeb, 0 0 8px #687375;
-    -webkit-transition-duration: .50s;
+  margin-right: 20px;
+  border-right: 7px solid #456D75;
+  border-left: 7px solid #456D75;
+  border-top: 7px solid #456D75;
+  border-bottom: 7px solid #456D75;
+  background-color: #DBF2F7;
+  padding: 10px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -border-radius: 0px;
+  box-shadow: inset 0 0 50px #ecebeb, 0 0 8px #687375;
+  -webkit-transition-duration: .50s;
 }
 
 .social2{
-    margin-right: 20px;
-    border-right: 7px solid #90E4F5;
-    border-left: 7px solid #90E4F5;
-    border-top: 7px solid #90E4F5;
-    border-bottom: 7px solid #90E4F5;
-    background-color: #DBF2F7;
-    padding: 10px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -border-radius: 0px;
-    box-shadow: inset 0 0 50px #ecebeb, 0 0 8px #687375;
-    -webkit-transition-duration: .50s;
+  margin-right: 20px;
+  border-right: 7px solid #90E4F5;
+  border-left: 7px solid #90E4F5;
+  border-top: 7px solid #90E4F5;
+  border-bottom: 7px solid #90E4F5;
+  background-color: #DBF2F7;
+  padding: 10px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -border-radius: 0px;
+  box-shadow: inset 0 0 50px #ecebeb, 0 0 8px #687375;
+  -webkit-transition-duration: .50s;
 }
 
-.social3{
+ .social3{
   margin-top: 30px;
   padding: 10px;
   border-right: 7px solid #72B5C2;
@@ -346,13 +348,6 @@ iframe{
   background-color: #DBF2F7;
   box-shadow: inset 0 0 10px #ecebeb, 0 0 8px #687375;
   -webkit-transition-duration: .50s;
-}
-
-.grow-redes:hover
-{
-        -webkit-transform: scale(1.10);
-        -ms-transform: scale(1.10);
-        transform: scale(1.10);
 }
 
 /*Botão subir*/
@@ -428,6 +423,19 @@ iframe{
   margin-left: 100px;
 }
 
+.text-footer{
+  text-align: justify;
+  width: 80%;
+ }
+
+/*Colocando grow nas redes sociais*/
+ .grow-redes:hover
+{
+  -webkit-transform: scale(1.10);
+  -ms-transform: scale(1.10);
+  transform: scale(1.10);
+}
+
 .copyright-text
 {
   margin:0
@@ -459,31 +467,30 @@ iframe{
 }
 
 /*TABLET */
-
 @media (max-width: 1169px){
   .link-news{
     margin-left: 75%;
  }
 
-   .icones-display{
+  .icones-display{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
 }
 
-.passos{
+  .passos{
     width: 1000px;
     margin-top: 30px;
     text-align: center;
 }
 
-.passos p{
+  .passos p{
     text-align: justify;
     font-size: 15px;
 }
 
- .ajuda-display{
+  .ajuda-display{
     display: inline-block;
     justify-content: space-between;
     width: 74%;
@@ -491,46 +498,50 @@ iframe{
     margin: auto;
 }
 
-.social-display{
+textarea{
+  margin-top: 10px;
+}
+
+  .social-display{
     display: flex;
     justify-content: space-between;
     margin: auto;
 
 }
 
-.social1{
+  .social1{
     width: 300px;
     margin-right: 20px;
 }
 
-.social2{
+  .social2{
     width: 300px;
     margin-right: 20px;
 }
 
-.social3{
+  .social3{
     width: 300px;
     margin-right: 20px;
 }
 
-.social4{
+  .social4{
     width: 300px;
     margin-right: 20px;
     margin-top: 10px;
 }
 
-
-
-.social-icons{
+  .social-icons{
   align-items: center;
   margin: auto;
 }
 
-
+  .Tnoticia{
+  font-size: 30px;
+}
 
 }
-/*SMART*/
 
+/*SMART*/
 @media (max-width: 767px){
 
   html,body{
@@ -541,7 +552,7 @@ iframe{
     margin-left: 65%;
  }
 
- .ajuda-display{
+  .ajuda-display{
     display: inline-block;
     justify-content: space-between;
     width: 74%;
@@ -549,45 +560,58 @@ iframe{
     margin: auto;
 }
 
-.social-display{
+textarea{
+  margin-top: 10px;
+}
+
+  .social-display{
     display: inline-block;
     justify-content: space-between;
     margin: auto;
 }
 
-.social1{
+  .social1{
     width: 400px;
     margin-right: 20px;
 }
 
-.social2{
-    width: 400px;
-    margin-right: 20px;
-    margin-top: 25px;
-}
-
-.social3{
+  .social2{
     width: 400px;
     margin-right: 20px;
     margin-top: 25px;
 }
 
-.social4{
+  .social3{
     width: 400px;
     margin-right: 20px;
     margin-top: 25px;
 }
 
-.text-footer{
-  text-align: justify;
-  justify-content: center;
-  width: 75%;
-  margin: auto;
+  .social4{
+    width: 400px;
+    margin-right: 20px;
+    margin-top: 25px;
 }
 
-.social-icons{
-  align-items: center;
-  margin: auto;
+  .text-footer{
+    text-align: justify;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+}
+
+  .social-icons{
+    align-items: center;
+    margin: auto;
+}
+
+  .Tnoticia{
+    font-size: 25px;
+}
+
+  .imgcard{
+    width: 300px;
+    height: 300px;
 }
 
 }
