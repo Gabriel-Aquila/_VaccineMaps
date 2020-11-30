@@ -377,7 +377,7 @@
           </p>
            
           <p class="linklogincad">  
-            Já possui uma conta?
+            Já possui uma conta:
             <a href="#paralogin"> Ir para Login </a>
           </p>
         </form>
