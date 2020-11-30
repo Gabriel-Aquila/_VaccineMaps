@@ -111,7 +111,7 @@
         request.send(null);
       }
 
-      function doNothing() {}
+      function doNothing() {} 
     
     </script>
 
