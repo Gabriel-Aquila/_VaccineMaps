@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Mapa</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="estilo/index.css">
+   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Modal2 -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="background: linear-gradient(0deg, rgba(144,228,245,96) 0%, rgba(219,242,247,97) 120%);">
+                       
+                        <h4 class="modal-title">Olá!</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col">
+                        <p>Clique no posto que desejar e encontre as informações explorando a comunidade interativa.</p>
+                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" style="padding: 0.1rem 1rem;" data-dismiss="modal">OK</button>
+                    </div>    
+                </div>
+                </div>
+            </div>
+        </div>
+
+	<nav class="navbar navbar-expand-lg navbar-light" style="padding: 1rem 2rem; background-color: #90E4F5;">
+  <a class="navbar-brand" href="index.html"><img src="image/logo.png" /></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> 
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+    <!-- ICON -->
+   <a style="cursor:pointer; margin-left: 96.2%" name=""><img src="image/usergray.png" data-toggle="modal" data-target="#modalExemplo" class="usericon" ></a>
+ </div>
+</nav>
+<main>
+  <div class="container">
+    <h1>Explore os postos da sua vizinhança</h1>
+    </div>
+
+    <!-- Mapa -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14640.154939375903!2d-46.680192802836366!3d-23.459067243116746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1subs!5e0!3m2!1spt-BR!2sbr!4v1603718922358!5m2!1spt-BR!2sbr" width="100%" height="650" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <div class="container">
+    </div>
+</main>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>Sobre a VaccineMaps</h6>
+            <p class="text-footer">Nós da VaccineMaps, criamos este site colaborativo para ajudar os usuários a encontrar os postos de vacinação desejados. O projeto surgiu com a intenção de contribuir para o aumento da taxa de cobertura vacinal.</p>
+          </div>
+          <div class="col-xs-6 col-md-3">
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <a href="#"><img src="image/logo2footer.png"></a>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright © 2020 All Rights Reserved by VaccineMaps.
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="social-icons">
+                <a href="https://www.facebook.com/VaccineMaps-102086405054253" style="padding-right: 25px;"><img class="grow-redes" src="image/face.png"></a>
+                <a href="https://www.instagram.com/vaccinemaps/?hl=pt-br" style="padding-right: 25px;"><img class="grow-redes"  src="image/instagram.png"></a>
+                <a href="https://twitter.com/MapsVaccine?s=09" style="padding-right: 25px;"><img class="grow-redes"src="image/twitter.png"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+</footer>
+ 
+   <!-- Modal -->
+<div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Seja Bem-Vindo!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="containercadlogin" >
+    <a class="linkscadlogin" id="paracadastro"></a>
+    <a class="linkscadlogin" id="paralogin"></a>
+     
+    <div class="cadlogingcontent">      
+      <!--FORMULÁRIO DE LOGIN-->
+      <div id="loginhome">
+        <form method="post" action=""> 
+          <h1>Login</h1> 
+          <p> 
+            <label for="nome_login">Seu E-mail</label>
+            <input id="nome_login" name="nome_login" required="required" type="email" placeholder="Ex. contato@gmail.com"/>
+          </p>
+           
+          <p> 
+            <label for="email_login">Sua Senha</label>
+            <input id="email_login" name="email_login" required="required" type="password" placeholder="Ex. 1234" /> 
+          </p>
+           
+          <p> 
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+           
+          <p> 
+            <input type="submit" value="Logar" /> 
+          </p>
+           
+          <p class="linklogincad">
+            Ainda não possui uma conta?
+            <a href="#paracadastro">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+ 
+            <!--FORMULÁRIO DE CADASTRO-->
+            <div id="cadastrohome">
+              <form method="post" action=""> 
+                <h1>Cadastro</h1> 
+                 
+                <p> 
+                  <label for="nome_cad">Seu Nome</label>
+                  <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Ex. José da Silva" />
+                </p>
+                 
+                <p> 
+                  <label for="email_cad">Seu E-mail</label>
+                  <input id="email_cad" name="email_cad" required="required" type="email" placeholder="Ex. contato@gmail.com"/> 
+                </p>
+                 
+                <p> 
+                  <label for="senha_cad">Sua Senha</label>
+                  <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="Ex. 1234"/>
+                </p>
+
+                <p> 
+                  <label for="termos">Termos de privacidade e segurança</label>
+                  <a href="termos.html" target="_blank">Li e concordo</a>
+                  <input type="checkbox" required="required" name="termos" id="termos" value="" /> 
+                </p>          
+                 
+                <p> 
+                  <input type="submit" value="Cadastrar"/> 
+                </p>
+                 
+                <p class="linklogincad">  
+                  Já possui uma conta?
+                  <a href="#paralogin"> Ir para Login </a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $('#myModal').modal('show')
+</script>
+
+  </body>
+</html>
