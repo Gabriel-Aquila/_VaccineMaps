@@ -2,6 +2,7 @@
 session_start();
 ob_start();
 include("conexao.php");
+//cadastro do posto no banco de dados via php
 
 $nome= mysqli_real_escape_string($conexao, trim($_POST['nome']));
 $usuario= mysqli_real_escape_string($conexao, trim($_POST['usuario']));

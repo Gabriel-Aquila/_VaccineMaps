@@ -1,3 +1,4 @@
+//estilizando o mapa
 const mapStyle = [{
     'featureType': 'administrative',
     'elementType': 'all',
@@ -76,30 +77,21 @@ const mapStyle = [{
   ];
   
   function initMap() {
-    // Create the map.
+    // Criando o mapa
     const map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 7,
-      center: {lat: 52.632469, lng: -1.689423},
+      zoom: 10,
+      center: {lat: -23.506935946313494, lng: -46.62141292741952},
       styles: mapStyle,
     });
   
-    // Load the stores GeoJSON onto the map.
+    // Carregando o arquivo json para exibição dos postos
     map.data.loadGeoJson('postos.json', {idPropertyName: 'storeid'});
   
-   /* // Define the custom marker icons, using the store's "category".
-    map.data.setStyle((feature) => {
-      return {
-        icon: {
-          url: `img/icon_${feature.getProperty('category')}.png`,
-          scaledSize: new google.maps.Size(64, 64),
-        },
-      };
-    }); */
-  
+  // inserindo a chave da API para utilização das ferramentas.
     const apiKey = 'AIzaSyDzHUYzCDL3rIzrBX33QLvI2BDaFA1rcNs';
     const infoWindow = new google.maps.InfoWindow();
   
-    // Show the information for a store when its marker is clicked.
+    // Mostrando a informação do local ao clicar no ponto
     map.data.addListener('click', (event) => {
       const category = event.feature.getProperty('category');
       const name = event.feature.getProperty('name');
@@ -122,7 +114,7 @@ const mapStyle = [{
       infoWindow.open(map);
     });
 
-    // Build and add the search bar
+    // Exibindo a barra de pesquisa
   const card = document.createElement('div');
   const titleBar = document.createElement('div');
   const title = document.createElement('div');
@@ -146,15 +138,13 @@ const mapStyle = [{
   card.appendChild(container);
   map.controls[google.maps.ControlPosition.TOP_RIGHT].push(card);
 
-  // Make the search bar into a Places Autocomplete search bar and select
-  // which detail fields should be returned about the place that
-  // the user selects from the suggestions.
+  // Configurando a barra de pesquisa para completar automaticamente os endereços digitados
   const autocomplete = new google.maps.places.Autocomplete(input, options);
 
   autocomplete.setFields(
       ['address_components', 'geometry', 'name']);
 
-// Set the origin point when the user selects an address
+// Mudando o foco do mapa para o endereço digitado
 const originMarker = new google.maps.Marker({map: map});
 originMarker.setVisible(false);
 let originLocation = map.getCenter();
@@ -165,13 +155,12 @@ autocomplete.addListener('place_changed', async () => {
   const place = autocomplete.getPlace();
 
   if (!place.geometry) {
-    // User entered the name of a Place that was not suggested and
-    // pressed the Enter key, or the Place Details request failed.
-    window.alert('No address available for input: \'' + place.name + '\'');
+    // xibindo mensagem para endereços não reconhecidos
+    window.alert('Nenhum endereço encontrado: \'' + place.name + '\'');
     return;
   }
 
-  // Recenter the map to the selected address
+  // Reposicionando o mapa;
   originLocation = place.geometry.location;
   map.setCenter(originLocation);
   map.setZoom(9);
@@ -180,8 +169,7 @@ autocomplete.addListener('place_changed', async () => {
   originMarker.setPosition(originLocation);
   originMarker.setVisible(true);
 
-  // Use the selected address as the origin to calculate distances
-  // to each of the store locations
+  // Usar o endereço digitado para calcular a distancia e identificar os postos próximos
   const rankedStores = await calculateDistances(map.data, originLocation);
   showStoresList(map.data, rankedStores);
 
@@ -201,8 +189,7 @@ async function calculateDistances(data, origin) {
       destinations.push(storeLoc);
     });
   
-    // Retrieve the distances of each store from the origin
-    // The returned list will be in the same order as the destinations list
+    // Retornando dados da distancia com o recurso DistanceMatrixService da API
     const service = new google.maps.DistanceMatrixService();
     const getDistanceMatrix =
       (service, parameters) => new Promise((resolve, reject) => {

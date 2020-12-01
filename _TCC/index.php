@@ -4,10 +4,9 @@
 	<title>VaccineMaps</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<link rel="stylesheet" type="text/css" href="estilo/index.css">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -49,7 +48,7 @@
     <h1 class="display-4">INFORME SEU CEP</h1>
     <p class="lead">Pesquise seu CEP para encontrar os postos mais próximos e localize a vacina que deseja.</p>
       <form class="form-inline" style="justify-content: center;">
-        <input class="form-control ml-4 mr-2" type="Search" id="inputCEP" placeholder="Ex: 02880-010" style="width: 30%; height: 40px; text-align: center;">
+        <input class="form-control ml-4 mr-2 formcep" type="Search" id="inputCEP" placeholder="Ex: 02880-010" style="height: 40px; text-align: center;" onkeypress="$(this).mask('00000-000')">
       </form>
       <br>
       <a href="pagcep.html">
@@ -58,9 +57,7 @@
   </div>
     </div>
   </div> 
-
 </div>
-
 
 <div class="container">
 <section id="comofunciona" style="padding-top: 100px;" >
@@ -71,7 +68,7 @@
                 <br>
                 <br>
                 <h3>Passo 1</h3>
-                <center>Informe seu CEP no campo de busca.</center>
+                <center>Informe seu Endereço no campo de busca.</center>
                 </div>
             <div class="col">
                 <img src="image/mapa.png" style="filter:drop-shadow(8px 8px 10px gray);"/>
@@ -90,9 +87,7 @@
         </div>
 </section>
         </div>
-
-
-
+        
 <!-- aparecer no desktop -->  
 <div class="container">
     
@@ -132,14 +127,7 @@
  </div>
 <br>
 <a href="pagnoticia.html"><button class="btn btn-dark" style="padding: 0.7rem 1.5rem; font-size: 1.1rem; width: 50%; margin-left: 25%;" type="submit">Ver mais notícias</button></a>
-
- 
-
 </div>
-
- 
-
-
      <!-- aparecer no mobile -->
     <div class="d-sm-block d-lg-none">
       <h1 style="text-align: left;" >Notícias</h1>
@@ -182,6 +170,8 @@
 
 </section>
   </div>
+
+  <!-- Ajuda -->
 <section id="ajuda" style="padding-top: 100px;">
 <div class="jumbotron2 jumbotron-fluid">
 
@@ -199,9 +189,8 @@
   
              <div class="form-group">
  
-        <input type="Tel" class="form-control" style="height: 42px;width:160%; padding-left:  15px" id="formGroupExampleInput" placeholder="Telefone">
+        <input type="Tel" class="form-control" style="height: 42px;width:160%; padding-left:  15px" id="formGroupExampleInput" placeholder="Telefone" onkeypress="$(this).mask('(00) 0000-00009')">
             </div>
-
         </div>
 
           <div class="form-group">
@@ -209,8 +198,6 @@
          </div>
   <button type="submit" class="btn btn-primary" style="padding: 0.3rem 2rem; font-size: 0.9999rem; background-color: black">Enviar</button>
   </div>
-
-
 </div>
 </section>
 
@@ -252,9 +239,6 @@
 </main>
 <br>
 <br>
-
-
-  
     <!-- Site footer -->
     <footer class="site-footer">
       <div class="container">
@@ -277,8 +261,6 @@
           <div class="col-xs-6 col-md-3">
             <a href="#"><img src="image/logo2footer.png"></a>
           </div>
-
-
         </div>
         <hr>
       </div>
@@ -301,7 +283,7 @@
 
 <!-- Modal -->
 <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Seja Bem-Vindo!</h5>
@@ -311,15 +293,9 @@
       </div>
       <div class="modal-body">
         
-
-
-
-
-
-
         <div class="containercadlogin" >
-    <a class="linkscadlogin" id="paracadastro"></a>
-    <a class="linkscadlogin" id="paralogin"></a>
+          <a class="linkscadlogin" id="paracadastro"></a>
+          <a class="linkscadlogin" id="paralogin"></a>
      
     <div class="cadlogingcontent">      
       <!--FORMULÁRIO DE LOGIN-->
@@ -352,42 +328,47 @@
         </form>
       </div>
  
-      <!--FORMULÁRIO DE CADASTRO-->
-      <div id="cadastrohome">
-        <form method="post" action="./_TCC/server/cadastrar.php"> 
-          <h1>Cadastro</h1> 
-           
-          <p> 
-            <label for="nome_cad">Seu Nome</label>
-            <input id="nome_cad" name="nome" required="required" type="text" placeholder="Ex. José da Silva" />
-          </p>
-           
-          <p> 
-            <label for="email_cad">Seu E-mail</label>
-            <input id="email_cad" name="usuario" required="required" type="email" placeholder="Ex. contato@gmail.com"/> 
-          </p>
-           
-          <p> 
-            <label for="senha_cad">Sua Senha</label>
-            <input id="senha_cad" name="senha" required="required" type="password" placeholder="Ex. 1234"/>
-          </p>
-           
-          <p> 
-            <input type="submit" value="Cadastrar"/> 
-          </p>
-           
-          <p class="linklogincad">  
-            Já possui uma conta?
-            <a href="#paralogin"> Ir para Login </a>
-          </p>
-        </form>
+            <!--FORMULÁRIO DE CADASTRO-->
+            <div id="cadastrohome">
+              <form method="post" action="./_TCC/server/cadastrar.php"> 
+                <h1>Cadastro</h1> 
+                 
+                <p> 
+                  <label for="nome_cad">Seu Nome</label>
+                  <input id="nome_cad" name="nome" required="required" type="text" placeholder="Ex. José da Silva" />
+                </p>
+                 
+                <p> 
+                  <label for="email_cad">Seu E-mail</label>
+                  <input id="email_cad" name="usuario" required="required" type="email" placeholder="Ex. contato@gmail.com"/> 
+                </p>
+                 
+                <p> 
+                  <label for="senha_cad">Sua Senha</label>
+                  <input id="senha_cad" name="senha" required="required" type="password" placeholder="Ex. 1234"/>
+                </p>
+                 
+                <p> 
+                  <label for="termos">Termos de privacidade e segurança</label>
+                  <a href="termos.html" target="_blank">Li e concordo</a>
+                  <input type="checkbox" required="required" name="termos" id="termos" value="" /> 
+                </p>
+
+                <p> 
+                  <input type="submit" value="Cadastrar"/> 
+                </p>
+                 
+                <p class="linklogincad">  
+                  Já possui uma conta?
+                  <a href="#paralogin"> Ir para Login </a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
-
-
-
-  </div>
+</div>
 </body>
 </html>

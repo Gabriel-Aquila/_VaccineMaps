@@ -1,3 +1,7 @@
+<?php 
+include "conexao_comentarios.php";
+
+?>
 <!DOCTYPE html>
 <html>
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -9,6 +13,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <style>
+    /* Configurando estilo e comportamento do mapa na página*/
     #map {
         height: 100%;
     }
@@ -150,11 +155,46 @@
 
     <!-- Mapa -->
     <div class="container">
-    
+
+<!-- Formulário para comentários-->
+    <form name="commentform" method="post" action="insertcomment.php">
+
+      Nome: <input type="text" name="nome"/> <br/>
+
+      Rede Social: <input type="text" name="rede_social"/> <br/>
+
+      Comentário: <textarea name="comentario">  </textarea> </br>
+
+      <input type = "submit" value ="Enviar comentário"/>
+
+</form>
+
+<!-- Exibindo comentários feitos -->
+<!--?php 
+  $sql= mysqli_query($conexao,"SELECT* FROM comentarios_tb");
+  $row= mysqli_num_rows($conexao,$sql);
+
+  if($row>0){
+    while($linha = mysqli_fetch_array($query)){
+      $nome = $linha['nome'];
+      $rede_social = $linha['rede_social'];
+      $comentario = $linha['comentario'];
+
+      echo $nome;
+      echo "<br/>"
+      echo $comentario;
+     
+
+
+    } else {
+      echo "ainda não há comentários";
+    }
+  }
+?-->
 
     </div>
 
-  
+
 
 
 
