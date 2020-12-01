@@ -74,6 +74,43 @@ form{
     margin-right: auto;
 }
  
+/*minha conta*/
+.minhaconta{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 23%;
+  width: 50%;
+  border-right: 7px solid #90E4F5;
+  border-left: 7px solid #90E4F5;
+  border-top: 7px solid #90E4F5;
+  border-bottom: 7px solid #90E4F5;
+  background-color: #DBF2F7;
+  padding: 10px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -border-radius: 0px;
+  box-shadow: inset 0 0 50px #ecebeb, 0 0 8px #687375;
+  -webkit-transition-duration: .50s;
+}
+
+/*Termos de segurança e privacidade*/
+.termoscont{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 23%;
+  width: 50%;
+  border-right: 7px solid #90E4F5;
+  border-left: 7px solid #90E4F5;
+  border-top: 7px solid #90E4F5;
+  border-bottom: 7px solid #90E4F5;
+  background-color: #DBF2F7;
+  padding: 10px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -border-radius: 0px;
+  box-shadow: inset 0 0 50px #ecebeb, 0 0 8px #687375;
+  -webkit-transition-duration: .50s;
+} 
 /* escondendo as ancoras da tela */
 a.linkscadlogin{
   display: none;
@@ -82,13 +119,16 @@ a.linkscadlogin{
 .containercadlogin{
   margin-left: 2%;
   margin-right: 2%;
+  overflow-y:hidden;
+  overflow-x:hidden;
 }
 
 .cadlogingcontent{
   width: 500px;
   min-height: 560px;    
   margin: 0px auto;
-  position: relative;   
+  position: relative;
+  margin-bottom: 55px;
 }
 
 .cadlogingcontent p:first-child{
@@ -531,13 +571,23 @@ textarea{
 }
 
   .social-icons{
-  align-items: center;
-  margin: auto;
+    align-items: center;
+    margin: auto;
 }
 
   .Tnoticia{
-  font-size: 30px;
+    font-size: 30px;
 }
+  
+  .minhaconta{​​​​​​​
+    width: 80%;
+    margin-left: 10%;
+}​​​​​​​
+
+  .termoscont{​​​​​​​
+    width: 80%;
+    margin-left: 10%;
+}​​​​​​​
 
 }
 
@@ -547,6 +597,10 @@ textarea{
   html,body{
     overflow-x: hidden !important; 
   }
+
+  #inputCEP{
+    width: 35%;
+    }
 
   .link-news{
     margin-left: 65%;
@@ -612,6 +666,18 @@ textarea{
   .imgcard{
     width: 300px;
     height: 300px;
+}
+
+  .minhaconta{
+    width: 90%;
+    padding: 70px;
+    margin-left: 8%;
+}
+
+  .termoscont{
+    width: 90%;
+    padding: 70px;
+    margin-left: 8%;
 }
 
 }
