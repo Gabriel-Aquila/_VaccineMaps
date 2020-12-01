@@ -400,6 +400,14 @@ input[type="submit"]:hover{
   cursor: pointer;
 }
 
+.containercomentario{
+width:100%;
+overflow-y: scroll;
+height: 300px;
+background-color: #DBF2F7;
+padding: 50px;
+}
+
 /*Footer*/
 .site-footer
 {
