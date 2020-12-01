@@ -11,6 +11,7 @@ include_once("conexao_postos.php");
 	</head>
 	<body>
 		<a href="maps.php">Mapa</a><br><br>
+		
 		<?php
 		if(isset($_SESSION['msg'])){
 			echo $_SESSION['msg'];
