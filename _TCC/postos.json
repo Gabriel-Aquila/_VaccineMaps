@@ -1,21 +1,220 @@
 {
-  
     "type": "FeatureCollection",
     "features": [{
             "geometry": {
                 "type": "Point",
-                "coordinates": [-23.57691724392634, -46.733826578522596
+                "coordinates": [ -46.579866701484605 ,-23.553596845359927
                 ]
                 
             },
             "type": "Feature",
             "properties": {
-                "category": "",
-                "hours": "XX-XX",
-                "description": "UBS",
-                "name": "UBS butanta",
-                "phone": "000",
+                "category": "patisserie",
+                "hours": "10am - 6pm",
+                "description": "Descrição.",
+                "name": "AMA/UBS INTEGRADA AGUA RASA",
+                "phone": "+44 20 1234 5678",
                 "storeid": "01"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -46.65600159108767 ,-23.49410952230513
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "patisserie",
+                "hours": "10am - 6pm",
+                "description": "Descrição.",
+                "name": "UBS Parque Peruche",
+                "phone": "+44 117 121 2121",
+                "storeid": "02"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.61102631032493,  -23.50087887381096
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "patisserie",
+                "hours": "10am - 6pm",
+                "description": "Descrição.",
+                "name": "UBS CARANDIRU",
+                "phone": "+44 1603 123456",
+                "storeid": "03"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-46.658404850365265 ,-23.50087887381096
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "patisserie",
+                "hours": "10am - 6pm",
+                "description": "A gourmet patisserie that will delight your senses. We're part of a larger chain of patisseries and cafes.",
+                "name": "UBS Casa Verde",
+                "phone": "+44 1202 343434",
+                "storeid": "04"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -46.53280031900125 ,-23.50654597070005
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "patisserie",
+                "hours": "10am - 6pm",
+                "description": "Spoil yourself or someone special with our classic pastries. We're part of a larger chain of patisseries and cafes.",
+                "name": "AMA/UBS Chácara Cruzeiro do Sul",
+                "phone": "+44 151 444 4444",
+                "storeid": "05"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -46.63408053140659, -23.50024918151547
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "patisserie",
+                "hours": "10am - 6pm",
+                "description": "Come and feast your eyes and tastebuds on our delicious pastries and cakes. We're part of a larger chain of patisseries and cafes.",
+                "name": "UBS Joaquim Antônio Eirado",
+                "phone": "+44 5555 55555",
+                "storeid": "06"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-46.43908023834035 , -23.53668454445985
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "patisserie",
+                "hours": "10am - 6pm",
+                "description": "Josie's Patisserie is family-owned, and our delectable pastries, cakes, and great coffee are renowed. We're part of a larger chain of patisseries and cafes.",
+                "name": "Josie's Patisserie Cardiff",
+                "phone": "+44 29 6666 6666",
+                "storeid": "07"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.725019,
+                    52.668891
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "cafe",
+                "hours": "8am - 9:30pm",
+                "description": "Oakham's favorite spot for fresh coffee and delicious cakes. We're part of a larger chain of patisseries and cafes.",
+                "name": "Josie's Cafe Oakham",
+                "phone": "+44 7777 777777",
+                "storeid": "08"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-2.477653,
+                    53.735405
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "cafe",
+                "hours": "8am - 9:30pm",
+                "description": "Enjoy freshly brewed coffe, and home baked cakes in our homely cafe. We're part of a larger chain of patisseries and cafes.",
+                "name": "Josie's Cafe Blackburn",
+                "phone": "+44 8888 88888",
+                "storeid": "09"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.211363,
+                    51.108966
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "cafe",
+                "hours": "8am - 9:30pm",
+                "description": "A delicious array of pastries with many flavours, and fresh coffee in an snug cafe. We're part of a larger chain of patisseries and cafes.",
+                "name": "Josie's Cafe Crawley",
+                "phone": "+44 1010 101010",
+                "storeid": "10"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.123559,
+                    50.832679
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "cafe",
+                "hours": "8am - 9:30pm",
+                "description": "Grab a freshly brewed coffee, a decadent cake and relax in our idyllic cafe. We're part of a larger chain of patisseries and cafes.",
+                "name": "Josie's Cafe Brighton",
+                "phone": "+44 1313 131313",
+                "storeid": "11"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-3.319575,
+                    52.517827
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "cafe",
+                "hours": "8am - 9:30pm",
+                "description": "Come in and unwind at this idyllic cafe with fresh coffee and home made cakes. We're part of a larger chain of patisseries and cafes.",
+                "name": "Josie's Cafe Newtown",
+                "phone": "+44 1414 141414",
+                "storeid": "12"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.158167,
+                    52.071634
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "cafe",
+                "hours": "8am - 9:30pm",
+                "description": "Fresh coffee and delicious cakes in an snug cafe. We're part of a larger chain of patisseries and cafes.",
+                "name": "Josie's Cafe Ipswich",
+                "phone": "+44 1717 17171",
+                "storeid": "13"
             }
         }
     ]

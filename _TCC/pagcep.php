@@ -1,6 +1,6 @@
 <?php 
-include "conexao_comentarios.php";
-
+include ("conexao_comentarios.php");
+//include('server/verifica_login.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -156,6 +156,7 @@ include "conexao_comentarios.php";
     <!-- Mapa -->
     <div class="container">
 
+    
 <!-- Formulário para comentários-->
     <form name="commentform" method="post" action="insertcomment.php">
 
@@ -166,40 +167,59 @@ include "conexao_comentarios.php";
       Comentário: <textarea name="comentario">  </textarea> </br>
 
       <input type = "submit" value ="Enviar comentário"/>
-
 </form>
 
-<!-- Exibindo comentários feitos -->
-<!--?php 
-  $sql= mysqli_query($conexao,"SELECT* FROM comentarios_tb");
-  $row= mysqli_num_rows($conexao,$sql);
+      <div class="container">
+                <h1>Comunidade Interativa</h1>
+            <div class="containercomentario">
+            <?php 
+              $sql= "SELECT* FROM comentarios_tb";
+              $query= mysqli_query($conexao,$sql);
+              $row= mysqli_num_rows($query);
 
-  if($row>0){
-    while($linha = mysqli_fetch_array($query)){
-      $nome = $linha['nome'];
-      $rede_social = $linha['rede_social'];
-      $comentario = $linha['comentario'];
+              if($row>0) {
+                while($linha= mysqli_fetch_array($query)){
+                  $nome = $linha['nome'];
+                  $rede_social = $linha ['rede_social'];
+                  $comentario= $linha ['comentario'];
 
-      echo $nome;
-      echo "<br/>"
-      echo $comentario;
-     
+                    echo $nome;
+                    echo "<br/>"; 
+                    echo $rede_social;
+                    echo "<br/>"; 
+                    echo $comentario;
+                    echo "<br/>"; echo "<br/>";
+                  }
+                }
 
 
-    } else {
-      echo "ainda não há comentários";
-    }
-  }
-?-->
+              
+
+             
+
+              
+
+              
+                  ?>
 
     </div>
+
+   
+
+
+            </div>
+          </div>
+          
+<!-- Exibindo comentários feitos -->
+
+
 
 
 
 
 
 </main>
-
+<h2><a href="server/logout.php">Sair</a> </h2>
 
 
     <!-- Site footer -->

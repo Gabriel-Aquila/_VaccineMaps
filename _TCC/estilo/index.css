@@ -390,6 +390,15 @@ input[type="submit"]:hover{
   -webkit-transition-duration: .50s;
 }
 
+
+.containercomentario{
+  width:100%;
+  overflow-y: scroll;
+  height: 300px;
+  background-color: #DBF2F7;
+  padding: 50px;
+  }
+
 /*Botão subir*/
 #subir{
   position:fixed;
@@ -680,4 +689,7 @@ textarea{
     margin-left: 8%;
 }
 
+.cadlogingcontent{
+  width: 115%;
+  }
 }

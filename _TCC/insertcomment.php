@@ -12,8 +12,7 @@
     $insert="INSERT comentarios_tb(nome,rede_social, comentario)VALUES('$nome','$rede_social','$comentario')";
 
     $query= mysqli_query($conexao,$insert);
-    echo"<center> <h1>Obrigado,seu comentário foi enviado.</h1> </center>";
-
+    header('Location: ../pagcep.php');   
     
 
 

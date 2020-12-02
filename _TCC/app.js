@@ -79,7 +79,7 @@ const mapStyle = [{
   function initMap() {
     // Criando o mapa
     const map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 10,
+      zoom: 15,
       center: {lat: -23.506935946313494, lng: -46.62141292741952},
       styles: mapStyle,
     });
@@ -122,7 +122,7 @@ const mapStyle = [{
   const input = document.createElement('input');
   const options = {
     types: ['address'],
-    componentRestrictions: {country: 'br'},
+   // componentRestrictions: {country: 'br'},
   };
 
   card.setAttribute('id', 'pac-card');

@@ -45,13 +45,11 @@
   <div class="container">
         <div class="row">
       <div class="col-12 text-center">
-    <h1 class="display-4">INFORME SEU CEP</h1>
-    <p class="lead">Pesquise seu CEP para encontrar os postos mais próximos e localize a vacina que deseja.</p>
-      <form class="form-inline" style="justify-content: center;">
-        <input class="form-control ml-4 mr-2 formcep" type="Search" id="inputCEP" placeholder="Ex: 02880-010" style="height: 40px; text-align: center;" onkeypress="$(this).mask('00000-000')">
-      </form>
+    <h1 class="display-4">INFORME SEU Endereço</h1>
+    <p class="lead">Pesquise seu Endereço para encontrar os postos mais próximos e localize a vacina que deseja.</p>
+      
       <br>
-      <a href="pagcep.html">
+      <a href="pagcep.php">
         <button class="btn btn-dark" style="padding: 0.7rem 1.5rem; font-size: 1.1rem" type="submit">Pesquisar</button>
       </a>
   </div>
