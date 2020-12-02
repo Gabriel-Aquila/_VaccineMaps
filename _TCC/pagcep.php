@@ -5,13 +5,11 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
-  <link rel="stylesheet" type="text/css" href="estilo/index.css">
+	<link rel="stylesheet" type="text/css" href="estilo/index.css">
    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-
-
-
   <style>
+    /* Configurando estilo e comportamento do mapa na página*/
     #map {
         height: 100%;
     }
@@ -103,7 +101,7 @@
   padding-right: 18px;
 }
 </style>
-
+  
 </head>
 <body>
   <!-- Modal2 -->
@@ -116,22 +114,10 @@
                        
                         <h4 class="modal-title">Olá!</h4>
                     </div>
-
-                    <div id="map"></div>
-
-
-                    
-                  <script src="app.js"></script>
-                  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzHUYzCDL3rIzrBX33QLvI2BDaFA1rcNs&libraries=places&callback=initMap">
-                  </script>
-                                  
-                    
-
-
-
-
-
-
+                    <div class="modal-body">
+                        <div class="col">
+                        <p>Clique no posto que desejar e encontre as informações explorando a comunidade interativa.</p>
+                        </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-dark" style="padding: 0.1rem 1rem;" data-dismiss="modal">OK</button>
                     </div>    
@@ -152,16 +138,56 @@
    <a style="cursor:pointer; margin-left: 96.2%" name=""><img src="image/usergray.png" data-toggle="modal" data-target="#modalExemplo" class="usericon" ></a>
  </div>
 </nav>
+
+
+<div id="map"></div>
+
 <main>
   <div class="container">
     <h1>Explore os postos da sua vizinhança</h1>
     </div>
 
+    
+
     <!-- Mapa -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14640.154939375903!2d-46.680192802836366!3d-23.459067243116746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1subs!5e0!3m2!1spt-BR!2sbr!4v1603718922358!5m2!1spt-BR!2sbr" width="100%" height="650" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <div class="container">
+
+    
+<!-- Formulário para comentários-->
+    <form name="commentform" method="post" action="insertcomment.php">
+
+      Nome: <input type="text" name="nome"/> <br/>
+
+      Rede Social: <input type="text" name="rede_social"/> <br/>
+
+      Comentário: <textarea name="comentario">  </textarea> </br>
+
+      <input type = "submit" value ="Enviar comentário"/>
+</form>
+
+      <div class="container">
+                <h1>Comunidade Interativa</h1>
+            <div class="containercomentario">
+            teste<br/>teste<br/>  teste<br/><br/>teste<br/>teste<br/>  teste<br/><br/>teste<br/>teste<br/>  teste<br/><br/>teste2<br/>teste2<br/>Comentário de teste<br/><br/>teste2<br/>teste2<br/>Comentário de teste<br/><br/>
     </div>
+
+   
+
+
+            </div>
+          </div>
+          
+<!-- Exibindo comentários feitos -->
+
+
+
+
+
+
+
 </main>
+<h2><a href="server/logout.php">Sair</a> </h2>
+
 
     <!-- Site footer -->
     <footer class="site-footer">
@@ -288,6 +314,12 @@
 <script type="text/javascript">
     $('#myModal').modal('show')
 </script>
+
+<script src="app.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzHUYzCDL3rIzrBX33QLvI2BDaFA1rcNs&libraries=places&callback=initMap">
+</script>
+
+
 
   </body>
 </html>
