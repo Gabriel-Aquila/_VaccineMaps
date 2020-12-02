@@ -101,9 +101,6 @@
   <body>
     <div id="map"></div>
 
-    <p>Conhece um posto?<a href="./cadastrar_maps.php"> Compartilhe</a> </p>
-
-
     <script src="app.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzHUYzCDL3rIzrBX33QLvI2BDaFA1rcNs&libraries=places&callback=initMap">
     </script>
